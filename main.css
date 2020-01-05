@@ -106,16 +106,17 @@ p {
   padding-right: 15vw;
   margin-top: 2em;
   font-size: 1.1em;
+  line-height: 1.3em;
 }
 
 img {
   margin-left: 15vw;
   overflow: hidden;
-  margin-top: 3vw;
-  margin-bottom: 3vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
-h1, h2, h3, address {
+h1, h2, h3 {
   padding-left: 15vw;
   padding-right: 15vw;
 }
@@ -131,12 +132,6 @@ ul {
   margin-right: 15vw;
 }
 
-iframe {
- margin-left: 15vw;
- margin-right: 15vw;
- padding-bottom: 3em;
-}
-
 
 .p_footer {
   margin-top: 1em;
@@ -146,9 +141,6 @@ iframe {
   padding-bottom: 3em;
 }
 
-.forms img {
-  margin-bottom: 10px;
-}
 
 .links {
   margin-left: 15vw;
