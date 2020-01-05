@@ -1,8 +1,16 @@
-/* color:
-var(--dark-forest-green) = #14291a
-var(--smoke-blue) = #c8dce3
-irises flowers + ferns
-"looking at an iris when look at the website"*/
+:root {
+  --font-sans-serif: Montserrat, sans-serif;
+  --font-serif:'Playfair Display', serif;
+  --navy-blue: #253548;
+  --blush: #E4CEC5;
+  --tan: #f3eee7;
+  --black: #000;
+  --white: #fff;
+  --light-grey: #E5E5E5;
+  --font-cursive: 'Dawning of a New Day', cursive;
+}
+
+/* font-family: var(--font-serif); */
 
 html{
   position:relative;
@@ -17,9 +25,8 @@ html{
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lora', serif;
   color: #454444;
-  /* background-color: #f4f1e9; */
 }
 
 .topnav {
@@ -52,21 +59,6 @@ html, body {
   display: none;
 }
 
-.h1_title {
-  text-align: center;
-  font-size: 3.5em;
-  margin-top: 5vw;
-  margin-bottom: -20px;
-  /* padding-left: 0; */
-}
-
-.h2_title {
-  text-align: right;
-  /* margin-right: 25vw; */
-  font-size: 2em;
-  padding-bottom: 50px;
-}
-
 
 @media screen and (max-width: 675px) {
   .topnav a:not(:first-child) {display: none;}
@@ -78,21 +70,6 @@ html, body {
 
   img {
     width: 300px;
-  }
-
-  .h1_title {
-    text-align: center;
-    font-size: 2.2em;
-    margin-top: 5vw;
-    margin-bottom: -10px;
-    /* padding-left: 0; */
-  }
-
-  .h2_title {
-    text-align: right;
-    /* margin-right: 25vw; */
-    font-size: 1.5em;
-    padding-bottom: 50px;
   }
 }
 
@@ -111,21 +88,6 @@ html, body {
 
   img {
     width: 200px;
-  }
-
-  .h1_title {
-    text-align: center;
-    font-size: 2.2em;
-    margin-top: 5vw;
-    margin-bottom: -10px;
-    /* padding-left: 0; */
-  }
-
-  .h2_title {
-    text-align: right;
-    /* margin-right: 25vw; */
-    font-size: 1.5em;
-    padding-bottom: 50px;
   }
 }
 
@@ -199,8 +161,4 @@ iframe {
 .links {
   margin-left: 15vw;
   margin-right: 15vw;
-}
-
-.license-font {
-  font-size: 1em;
 }
