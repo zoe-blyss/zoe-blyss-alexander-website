@@ -1,13 +1,6 @@
 :root {
-  --font-sans-serif: Montserrat, sans-serif;
-  --font-serif:'Playfair Display', serif;
-  --navy-blue: #253548;
-  --blush: #E4CEC5;
-  --tan: #f3eee7;
-  --black: #000;
-  --white: #fff;
-  --light-grey: #E5E5E5;
-  --font-cursive: 'Dawning of a New Day', cursive;
+  --burgundy: #300f16;
+  --blush: #b77972;
 }
 
 /* font-family: var(--font-serif); */
@@ -15,7 +8,7 @@
 html{
   position:relative;
   min-height: 100%;
-  background: url(images/background.jpg) no-repeat center center fixed;
+  background: url(images/background-03.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,14 +24,14 @@ html, body {
 
 .topnav {
   overflow: hidden;
-  background-color: #939d84;
-  border-bottom: 4px solid #aeb8bd;
+  background-color: var(--burgundy);
+  border-bottom: 4px solid var(--blush);
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #2b463c;
+  color: var(--blush);
   text-align: center;
   padding: 1.1em;
   text-decoration: none;
@@ -46,13 +39,13 @@ html, body {
 }
 
 .topnav a:hover {
-  background-color: #c3d2d9;
-  color: #2b463c;
+  background-color: var(--burgundy);
+  color: var(--blush);
 }
 
 .topnav a.active {
-  background-color: #b7c0c4;
-  color: #2b463c;
+  background-color: var(--burgundy);
+  color: var(--blush);
 }
 
 .topnav .icon {
@@ -101,11 +94,11 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #939d84;
+  background-color: var(--burgundy);
   text-align: right;
   padding: 1px;
-  border-top: 4px solid #aeb8bd;
-  color: #2b463c;
+  border-top: 4px solid var(--blush);
+  color: var(--blush);
 }
 
 p {
@@ -147,7 +140,6 @@ iframe {
 
 .p_footer {
   margin-top: 1em;
-  color: #2b463c;
 }
 
 .p--last {
