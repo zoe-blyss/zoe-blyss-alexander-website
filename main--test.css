@@ -131,19 +131,46 @@ p {
 /* -----PAGES----- */
 .content {
   min-height: 100%;
-  padding-top: 2vw;
-  padding-bottom: 5vw;
+  /* padding-top: 2vw;
+  padding-bottom: 5vw; */
   padding-left: 15vw;
   padding-right: 15vw;
   }
 
 
-.about {
-  background-color: var(--blush);
-}
-
 .contact {
   background-color: var(--burgundy);
   color: var(--blush);
   text-align: right;
+}
+
+
+
+/* -----ABOUT GRID FORMATTING----- */
+
+
+.grid-container--about{
+  background-color: var(--blush);
+  display: grid;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+@media screen and (min-width: 65em) {
+  .grid-container--about{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-item--about--item-1{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.grid-item--about--item-2{
+  /* border: 1px solid blue; */
+  justify-content: center;
+  align-items: center;
 }
