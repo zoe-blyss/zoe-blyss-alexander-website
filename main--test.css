@@ -1,0 +1,149 @@
+:root {
+  --burgundy: #300f16;
+  --blush: #b77972;
+}
+/* font-family: var(--font-serif); */
+
+
+/* -----BODY----- */
+html{
+  position:relative;
+  min-height: 100%;
+  background: url(images/background-02.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  color: var(--burgundy);
+}
+
+
+
+
+/* -----HEADERS + FOOTERS----- */
+.topnav {
+  overflow: hidden;
+  background-color: var(--burgundy);
+  border-bottom: 4px solid var(--blush);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--blush);
+  text-align: center;
+  padding: 1.1em;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.topnav a:hover {
+  background-color: var(--burgundy);
+  color: var(--blush);
+}
+
+.topnav a.active {
+  background-color: var(--burgundy);
+  color: var(--blush);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 675px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    /* margin-right: 10vw; */
+    display: block;
+  }
+
+  img {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  img {
+    width: 200px;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--burgundy);
+  text-align: right;
+  padding: 1px;
+  padding-right: 5vw;
+  font-size: .9em;
+  border-top: 4px solid var(--blush);
+  color: var(--blush);
+}
+
+
+
+/* -----MAIN ELEMENTS----- */
+img {
+  overflow: hidden;
+  /* margin-top: 1vw;
+  margin-bottom: 1vw; */
+}
+
+h1 {
+  font-size: 2.5em;
+  /* margin-top: 5vw; */
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+
+
+/* -----PAGES----- */
+.content {
+  min-height: 100%;
+  padding-top: 2vw;
+  padding-bottom: 5vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  }
+
+
+.about {
+  background-color: var(--blush);
+}
+
+.contact {
+  background-color: var(--burgundy);
+  color: var(--blush);
+  text-align: right;
+}
