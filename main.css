@@ -2,9 +2,10 @@
   --burgundy: #300f16;
   --blush: #b77972;
 }
-
 /* font-family: var(--font-serif); */
 
+
+/* -----BODY----- */
 html{
   position:relative;
   min-height: 100%;
@@ -22,6 +23,10 @@ html, body {
   color: var(--burgundy);
 }
 
+
+
+
+/* -----HEADERS + FOOTERS----- */
 .topnav {
   overflow: hidden;
   background-color: var(--burgundy);
@@ -84,11 +89,6 @@ html, body {
   }
 }
 
-.content {
-  min-height: 100%;
-  padding-bottom: 100px;
-  }
-
 footer {
   position: absolute;
   bottom: 0;
@@ -97,52 +97,159 @@ footer {
   background-color: var(--burgundy);
   text-align: right;
   padding: 1px;
+  padding-right: 5vw;
+  font-size: .9em;
   border-top: 4px solid var(--blush);
   color: var(--blush);
 }
 
-p {
-  padding-left: 15vw;
-  padding-right: 15vw;
-  margin-top: 2em;
-  font-size: 1.1em;
-  line-height: 1.3em;
-}
 
+
+/* -----MAIN ELEMENTS----- */
 img {
-  margin-left: 15vw;
   overflow: hidden;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
-}
-
-h1, h2, h3 {
-  padding-left: 15vw;
-  padding-right: 15vw;
+  /* margin-top: 1vw;
+  margin-bottom: 1vw; */
 }
 
 h1 {
-  font-size: 2.5em;
-  margin-top: 5vw;
+  font-size: 7vw;
+  text-align: center;
+  /* margin-top: 5vw; */
 }
 
-ul {
-  font-size: 1.1em;
-  margin-left: 15vw;
-  margin-right: 15vw;
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
 
-.p_footer {
-  margin-top: 1em;
+.portfolio a:link {
+  color: var(--burgundy);
+  text-decoration: none;
 }
 
-.p--last {
-  padding-bottom: 3em;
+.portfolio a:visited {
+  color: var(--burgundy);
+  text-decoration: none;
+}
+
+.portfolio a:hover {
+  color: var(--blush);
+}
+
+.portfolio a:active {
+  text-decoration: none;
 }
 
 
-.links {
-  margin-left: 15vw;
-  margin-right: 15vw;
+.contact a:link {
+  color: var(--blush);
+  text-decoration: none;
+}
+
+.contact a:visited {
+  color: var(--blush);
+  text-decoration: none;
+}
+
+
+/* -----PAGES----- */
+.content {
+  min-height: 100%;
+  /* padding-top: 2vw;
+  padding-bottom: 5vw; */
+  padding-left: 15vw;
+  padding-right: 15vw;
+  }
+
+
+.contact {
+  background-color: var(--burgundy);
+  color: var(--blush);
+  text-align: right;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+
+
+.hero {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.portfolio {
+  padding-top: 7vh;
+  padding-bottom: 10vh;
+}
+
+
+/* -----CLASS SPECIFICS----- */
+
+.center {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.h2--vw {
+  font-size: 5vw;
+  text-align: center;
+}
+
+
+/* -----ABOUT GRID FORMATTING----- */
+
+
+.grid-container--about{
+  background-color: var(--blush);
+  display: grid;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+@media screen and (min-width: 65em) {
+  .grid-container--about{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-item--about--item-1{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.grid-item--about--item-2{
+  /* border: 1px solid blue; */
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* -----PORTFOLIO GRID FORMATTING----- */
+
+.grid-container--portfolio {
+  display: grid;
+  grid-gap: 7vw;
+}
+
+@media screen and (min-width: 65em) {
+  .grid-container--portfolio{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .responsive-image{
+    width: 300px;
+  }
 }
