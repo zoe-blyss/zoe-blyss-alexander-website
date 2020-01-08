@@ -132,6 +132,35 @@ p {
 }
 
 
+.portfolio a:link {
+  color: var(--burgundy);
+  text-decoration: none;
+}
+
+.portfolio a:visited {
+  color: var(--burgundy);
+  text-decoration: none;
+}
+
+.portfolio a:hover {
+  color: var(--blush);
+}
+
+.portfolio a:active {
+  text-decoration: none;
+}
+
+
+.contact a:link {
+  color: var(--blush);
+  text-decoration: none;
+}
+
+.contact a:visited {
+  color: var(--blush);
+  text-decoration: none;
+}
+
 
 /* -----PAGES----- */
 .content {
@@ -147,6 +176,8 @@ p {
   background-color: var(--burgundy);
   color: var(--blush);
   text-align: right;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
 }
 
 
@@ -159,6 +190,7 @@ p {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
+
 
 /* -----CLASS SPECIFICS----- */
 
