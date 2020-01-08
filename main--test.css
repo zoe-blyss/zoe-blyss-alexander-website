@@ -113,7 +113,8 @@ img {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 7vw;
+  text-align: center;
   /* margin-top: 5vw; */
 }
 
@@ -151,6 +152,11 @@ p {
 
 .center {
   text-align: center;
+}
+
+.hero {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
 /* -----ABOUT GRID FORMATTING----- */
@@ -203,4 +209,12 @@ p {
   .responsive-image{
     width: 300px;
   }
+}
+
+
+/* -----CLASS SPECIFICS----- */
+
+.h2--vw {
+  font-size: 5vw;
+  text-align: center;
 }
