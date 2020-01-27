@@ -1,6 +1,15 @@
 :root {
   --burgundy: #300f16;
   --blush: #b77972;
+  --blue: #4DC3FF;
+  --orange: #E69900;
+  --yellow: #FFE14D;
+  --red: #FF1919;
+  --light-green: #88CC00;
+  --dark-green: #116600;
+  --pink: #FF6680;
+  --dark-pink: #AB274F;
+
 }
 /* font-family: var(--font-serif); */
 
@@ -9,7 +18,7 @@
 html{
   position:relative;
   min-height: 100%;
-  background: url(images/background-02.jpg) no-repeat center center fixed;
+  background: url(images/evelyn-jiAorS6aPfQ-unsplash.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -29,14 +38,14 @@ html, body {
 /* -----HEADERS + FOOTERS----- */
 .topnav {
   overflow: hidden;
-  background-color: var(--burgundy);
-  border-bottom: 4px solid var(--blush);
+  background-color: var(--orange);
+  border-bottom: 4px solid var(--dark-pink);
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: var(--blush);
+  color: var(--dark-pink);
   text-align: center;
   padding: 1.1em;
   text-decoration: none;
@@ -173,8 +182,8 @@ p {
 
 
 .contact {
-  background-color: var(--burgundy);
-  color: var(--blush);
+  background-color: var(--orange);
+  color: var(--dark-pink);
   text-align: right;
   padding-top: 10vh;
   padding-bottom: 20vh;
@@ -209,7 +218,7 @@ p {
 
 
 .grid-container--about{
-  background-color: var(--blush);
+  background-color: var(--orange);
   display: grid;
   padding-top: 20vh;
   padding-bottom: 20vh;
@@ -237,6 +246,13 @@ p {
 
 /* -----PORTFOLIO GRID FORMATTING----- */
 
+.portfolio {
+  background: url(images/stacy-marie-mLx1dc-AJ5k-unsplash.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .grid-container--portfolio {
   display: grid;
   grid-gap: 7vw;
@@ -252,4 +268,49 @@ p {
   .responsive-image{
     width: 300px;
   }
+}
+
+
+/* Image overlay */
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 190px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
