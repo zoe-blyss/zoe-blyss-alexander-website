@@ -1,14 +1,9 @@
 :root {
-  --burgundy: #300f16;
-  --blush: #b77972;
-  --blue: #4DC3FF;
-  --orange: #E69900;
-  --yellow: #FFE14D;
-  --red: #FF1919;
-  --light-green: #88CC00;
-  --dark-green: #116600;
-  --pink: #FF6680;
-  --dark-pink: #AB274F;
+  --white: #ffffff;
+  --grey: #f5f4f3;
+  --orange: #ea9d42;
+  --peach: #f8bf7c;
+  --blue: #29abe2;
 
 }
 /* font-family: var(--font-serif); */
@@ -28,8 +23,8 @@ html{
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Lora', serif;
-  color: var(--burgundy);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--orange);
 }
 
 
@@ -39,13 +34,13 @@ html, body {
 .topnav {
   overflow: hidden;
   background-color: var(--orange);
-  border-bottom: 4px solid var(--dark-pink);
+  border-bottom: 4px solid var(--orange);
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: var(--dark-pink);
+  color: var(--white);
   text-align: center;
   padding: 1.1em;
   text-decoration: none;
@@ -53,13 +48,13 @@ html, body {
 }
 
 .topnav a:hover {
-  background-color: var(--burgundy);
-  color: var(--blush);
+  background-color: var(--peach);
+  color: var(--white);
 }
 
 .topnav a.active {
-  background-color: var(--burgundy);
-  color: var(--blush);
+  background-color: var(--orange);
+  color: var(--white);
 }
 
 .topnav .icon {
@@ -103,13 +98,13 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--burgundy);
+  background-color: var(--orange);
   text-align: right;
   padding: 1px;
   padding-right: 5vw;
   font-size: .9em;
-  border-top: 4px solid var(--blush);
-  color: var(--blush);
+  border-top: 4px solid var(--orange);
+  color: var(--white);
 }
 
 
@@ -142,12 +137,12 @@ p {
 
 
 .portfolio a:link {
-  color: var(--burgundy);
+  color: var(--white);
   text-decoration: none;
 }
 
 .portfolio a:visited {
-  color: var(--burgundy);
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -161,12 +156,12 @@ p {
 
 
 .contact a:link {
-  color: var(--blush);
+  color: var(--white);
   text-decoration: none;
 }
 
 .contact a:visited {
-  color: var(--blush);
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -182,8 +177,8 @@ p {
 
 
 .contact {
-  background-color: var(--orange);
-  color: var(--dark-pink);
+  background-color: var(--peach);
+  color: var(--white);
   text-align: right;
   padding-top: 10vh;
   padding-bottom: 20vh;
@@ -219,7 +214,7 @@ p {
 
 
 .grid-container--about{
-  background-color: var(--orange);
+  background-color: var(--grey);
   display: grid;
   padding-top: 20vh;
   padding-bottom: 20vh;
@@ -248,7 +243,7 @@ p {
 /* -----PORTFOLIO GRID FORMATTING----- */
 
 .portfolio {
-  background: url(images/stacy-marie-mLx1dc-AJ5k-unsplash.jpg) no-repeat center center fixed;
+  background: url(images/mel-g9Px49-lNks-unsplash.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -297,7 +292,7 @@ p {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: var(--blue);
 }
 
 .container:hover .overlay {
@@ -305,7 +300,7 @@ p {
 }
 
 .text {
-  color: white;
+  color: var(--white);
   font-size: 20px;
   position: absolute;
   top: 50%;
