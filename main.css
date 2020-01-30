@@ -13,7 +13,7 @@
 html{
   position:relative;
   min-height: 100%;
-  background: url(images/evelyn-jiAorS6aPfQ-unsplash.jpg) no-repeat center center fixed;
+  background: url(images/giraffe-3.jpg) no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,11 +34,19 @@ html, body {
 .topnav {
   overflow: hidden;
   background-color: var(--orange);
-  border-bottom: 4px solid var(--orange);
 }
 
+.topnav-logo{
+  float:left;
+  display: block;
+  color: var(--white);
+  font-size: 1.1em;
+  padding-left: 1.1em;
+}
+
+
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: var(--white);
   text-align: center;
@@ -103,7 +111,6 @@ footer {
   padding: 1px;
   padding-right: 5vw;
   font-size: .9em;
-  border-top: 4px solid var(--orange);
   color: var(--white);
 }
 
@@ -117,7 +124,7 @@ img {
 }
 
 h1 {
-  font-size: 7vw;
+  font-size: 6vw;
   text-align: left;
   margin-top: 1.5vw;
 }
@@ -179,7 +186,7 @@ p {
 .contact {
   background-color: var(--peach);
   color: var(--white);
-  text-align: right;
+  text-align: left;
   padding-top: 10vh;
   padding-bottom: 20vh;
 }
@@ -204,11 +211,14 @@ p {
 }
 
 .h2--vw {
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: right;
-  margin-bottom: 3vw;
+  margin-bottom: 6vw;
 }
 
+.grid-item--about--item-2 h2 {
+  margin-top: 0;
+}
 
 /* -----ABOUT GRID FORMATTING----- */
 
@@ -228,26 +238,22 @@ p {
 
 .grid-item--about--item-1{
   /* border: 1px solid red; */
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .grid-item--about--item-2{
   /* border: 1px solid blue; */
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 
 /* -----PORTFOLIO GRID FORMATTING----- */
 
 .portfolio {
-  background: url(images/mel-g9Px49-lNks-unsplash.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: var(--peach);
+  color: var(--white);
 }
 .grid-container--portfolio {
   display: grid;
