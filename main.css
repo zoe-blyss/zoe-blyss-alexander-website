@@ -4,6 +4,7 @@
   --orange: #ea9d42;
   --peach: #f8bf7c;
   --blue: #29abe2;
+  --dark-blue: #006b93;
 
 }
 /* font-family: var(--font-serif); */
@@ -136,9 +137,9 @@ img {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 7vw;
   text-align: left;
-  margin-top: 1.5vw;
+  margin-top: 2vw;
 }
 
 h2 {
@@ -229,9 +230,9 @@ p {
 }
 
 .h2--vw {
-  font-size: 4vw;
+  font-size: 5vw;
   text-align: right;
-  margin-bottom: 5vw;
+  margin-bottom: 4vw;
 }
 
 .p--end-spacing {
@@ -332,6 +333,12 @@ button {
 
 button a {
   text-decoration: none;
+  color: var(--white);
+}
+
+button:hover {
+  text-decoration: none;
+  background-color: var(--dark-blue);
   color: var(--white);
 }
 
