@@ -236,10 +236,6 @@ p {
 }
 
 
-.grid-item--about--item-2 h2 {
-  margin-top: 0;
-}
-
 .profile {
   margin-top: 4vw;
   margin-bottom: 4vw;
@@ -262,19 +258,15 @@ p {
 }
 
 .grid-item--about--item-1{
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.grid-item--about--item-2{
-  /* border: 1px solid blue; */
-  /* justify-content: center; */
-  /* align-items: center; */
+.grid-item--about--item-2 h2 {
+  margin-top: 0;
 }
-
 
 /* -----PORTFOLIO GRID FORMATTING----- */
 
@@ -319,6 +311,11 @@ button {
   border-radius: 10px;
   margin-bottom: 5vw;
   text-align: left;
+}
+
+button a{
+  text-decoration: none;
+  color: var(--white);
 }
 
 
