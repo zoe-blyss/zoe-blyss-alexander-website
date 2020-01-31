@@ -59,7 +59,7 @@ html, body {
 
 .topnav a:hover {
   background-color: var(--orange);
-  color: var(--white);
+  color: var(--dark-blue);
 }
 
 .topnav a.active {
@@ -239,6 +239,9 @@ p {
   margin-bottom: 5vw;
 }
 
+.contact a:hover {
+  color: var(--dark-blue);
+}
 
 /* -----ABOUT GRID FORMATTING----- */
 
