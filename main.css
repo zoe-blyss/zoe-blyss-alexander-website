@@ -239,11 +239,6 @@ p {
 }
 
 
-.profile {
-  margin-top: 4vw;
-  margin-bottom: 4vw;
-}
-
 /* -----ABOUT GRID FORMATTING----- */
 
 
@@ -254,9 +249,25 @@ p {
   padding-bottom: 20vh;
 }
 
+.profile {
+  margin-top: -2vh;
+  margin-bottom: 6vh;
+}
+
+
 @media screen and (min-width: 65em) {
   .grid-container--about{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  button {
+    margin-bottom: 20vw;
+    margin-top: 2vw;
   }
 }
 
@@ -314,6 +325,7 @@ button {
   padding-right: 100px;
   border-radius: 10px;
   margin-bottom: 5vw;
+  margin-top: 0vw;
   text-align: left;
     cursor: pointer;
 }
