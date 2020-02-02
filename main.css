@@ -310,12 +310,6 @@ p {
   }
 }
 
-@media screen and (min-width: 500px) {
-  .responsive-image{
-    width: 300px;
-  }
-}
-
 
 /* button */
 
@@ -345,23 +339,10 @@ button:hover {
 }
 
 
-/* Image overlay */
-
-.container {
-  position: relative;
-  width: 300px;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 /* fade-in overlay */
 .container {
   position: relative;
-  width: 300px;
+  width: 200px;
 }
 
 .image {
@@ -398,4 +379,15 @@ button:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+
+@media screen and (min-width: 500px) {
+  .responsive-image{
+    width: 300px;
+  }
+
+  .container {
+    width: 300px;
+  }
 }
