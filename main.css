@@ -245,9 +245,11 @@ p {
 
 .pages h1 {
   font-size: 3em;
+  margin-bottom: 0;
 }
 .pages h2 {
   font-size: 2em;
+  color: var(--peach);
 }
 .pages p {
   font-size: 1em;
