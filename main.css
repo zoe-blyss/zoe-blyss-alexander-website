@@ -222,6 +222,14 @@ p {
   padding-right: 10vw;
 }
 
+.pages {
+  background-color: var(--grey);
+  color: var(--orange);
+  text-align: left;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+
 /* -----CLASS SPECIFICS----- */
 
 .center {
@@ -235,8 +243,22 @@ p {
   margin-bottom: 4vw;
 }
 
+.pages h1 {
+  font-size: 3em;
+}
+.pages h2 {
+  font-size: 2em;
+}
+.pages p {
+  font-size: 1em;
+}
+
 .p--end-spacing {
   margin-bottom: 5vw;
+}
+
+.p--end-spacing-large {
+  margin-bottom: 6vw;
 }
 
 .contact a:hover {
@@ -366,7 +388,6 @@ button:hover {
 
 .container:hover .overlay {
   opacity: 1;
-  cursor: pointer;
 }
 
 .text {
