@@ -260,6 +260,12 @@ p {
   font-size: 1em;
 }
 
+@media screen and (min-width: 60em) {
+  .pages h1 {
+    font-size: 4em;
+  }
+}
+
 .p--end-spacing {
   margin-bottom: 5vw;
 }
