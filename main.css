@@ -256,8 +256,9 @@ p {
   font-size: 2em;
   color: var(--peach);
 }
-.pages p {
-  font-size: 1em;
+
+.pages li {
+  font-size: 1.2em;
 }
 
 @media screen and (min-width: 60em) {
