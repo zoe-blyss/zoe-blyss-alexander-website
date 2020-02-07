@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="normalize.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Cheatsheet V1</title>
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <p class="topnav-logo">Zoe Blyss Alexander</p>
+    <a href="index.html#index" class="topnav-logo orange">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#portfolio">Portfolio</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+
+
+  <div class="content pages">
+    <h1 class="p--end-spacing-large">CSS Cheatsheet Version 1</h1>
+
+    <div class="grid-container--portfolio">
+      <div class="grid-item-portfolio--item-1">
+        <div class="container p--end-spacing">
+          <a href="https://zoe-blyss.github.io/css-cheatsheet-v1/" target="_blank"><img srcset="images/css-cheatsheet-v1-website-500px.jpg 2x" src="images/css-cheatsheet-v1-website-500px.jpg" alt="screenshot of the CSS Cheatsheet Version 1 website"
+              class="responsive-image"></a>
+          <a href="https://zoe-blyss.github.io/css-cheatsheet-v1/" target="_blank">
+            <div class="overlay">
+              <div class="text">CSS Cheatsheet Version 1 Website</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h2>Methods Used</h2>
+    <ul>
+      <li>Responsive Design</li>
+      <li>Design Thinking</li>
+      <li>Mockups</li>
+    </ul>
+    <h2>Tools Used</h2>
+    <ul class="p--end-spacing-large">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Adobe Photoshop</li>
+    </ul>
+
+    <h2>The Project</h2>
+    <p class="p--end-spacing-large">A simple 1-page website in which I was tasked to create a “CSS Cheat Sheet” for my Web Development class. Played with design aesthetics and HTML tables.</p>
+  </div>
+
+
+  <div class="content contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email:<a href="mailto:zoealexande@gmail.com" class="hover--grey"> zoealexande@gmail.com</a><br><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/zoe-blyss-alexander/" target="_blank" class="hover--grey">www.linkedin.com/in/zoe-blyss-alexander/</a></p>
+  </div>
+
+
+
+  <footer>
+    <p>Zoe Blyss Alexander &#169; 2020</p>
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -261,6 +261,10 @@ p {
   font-size: 1.2em;
 }
 
+.pages a {
+  color: var(--peach);
+}
+
 @media screen and (min-width: 60em) {
   .pages h1 {
     font-size: 4em;
