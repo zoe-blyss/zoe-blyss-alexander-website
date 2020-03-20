@@ -286,6 +286,10 @@ p {
   margin-bottom: 5vw;
 }
 
+.p--end-spacing-bullet-points {
+  margin-bottom: 1.75vw;
+}
+
 .p--end-spacing-large {
   margin-bottom: 6vw;
 }
