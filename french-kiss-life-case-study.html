@@ -25,7 +25,7 @@
   <div class="content pages">
     <h1 class="p--end-spacing-large">French Kiss Life Homepage Case Study</h1>
 
-    <div class="grid-container--portfolio">
+    <!-- <div class="grid-container--portfolio">
       <div class="grid-item-portfolio--item-1">
         <div class="container p--end-spacing">
           <a href="https://zoe-blyss.github.io/french-kiss-life-case-study/" target="_blank"><img srcset="images/fkl-website-mockup-500px.jpg 2x" src="images/fkl-website-mockup-500px.jpg"
@@ -61,14 +61,14 @@
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <h2>Methods Used</h2>
     <ul>
       <li>Responsive Design</li>
+      <li>Atomic Design</li>
       <li>Style Guide</li>
       <li>Components Page</li>
-      <li>Mockups</li>
       <li>BEM</li>
     </ul>
     <h2>Tools Used</h2>
@@ -79,8 +79,37 @@
     </ul>
 
     <h2>The Project</h2>
-    <p>Final project for my Web Development class Fall 2019. Assignment was to replicate the home-page of a website. First tasked with breaking down all of the individual components and creating a style guide using these components, then replicating the component of site on a separate page using the BEM method, and finally compose all of atoms and molecules together to create the main page.</p>
-    <p>Original homepage of site I replicated, “French Kiss Life,” for comparison: <a href="https://frenchkisslife.com/" target="_blank"> https://frenchkisslife.com/ </a></p>
+    <p>The French Kiss Life Homepage Case Study was the final project for my Web Development class in Fall 2019. I was tasked to find a website I liked and replicate its homepage in the desktop format (we did not focus on responsive design for this project). We first had to break down the website according to Atomic Design principles, create a style guide from these components, create all of the components in a separate webpage, and then finally re-create the site using the components.</p>
+    <p>The website I chose to replicate is the “French Kiss Life” lifestyle brand by Tonya Leigh. Though some of the Instagram images will have changed, here is the original homepage for reference:</p>
+    <p class="p--end-spacing-large"><a href="https://frenchkisslife.com/" target="_blank">https://frenchkisslife.com/</a></p>
+
+    <h2>Breakdown of Homepage – Atomic Design</h2>
+    <p>The first task for my project was to use Atomic Design principles to break down the homepage of the website. Atomic Design principle states that individual components of websites, much like when analyzing anything in chemistry, can be broken down into three main components: atoms, molecules, and organisms.</p>
+    <p>Atoms are the smallest units which cannot be broken down any further without losing their functionality. These atoms would include components such as buttons or labels.</p>
+    <p>Much like in chemistry, molecules are a group of atoms which work together as a unit to perform a certain function. This, for example, could be a search form which is made up of a label and a button.</p>
+    <p class="p--end-spacing-large">Following the pattern, organisms are then made up of a variety of atoms or molecules. This might be a header that includes a search form and a primary navigation list.</p>
+    <img src="images/atomic-desing-examples.jpg" alt="visual comparison of atoms, molecules, and organisms" class="p--end-spacing-large">
+    <p class="p--end-spacing-large">To analyze the homepage using Atomic Design methodology, my first task was to take a screenshot of every atom, save their names according to Block Element Modifier (BEM, <a href="http://getbem.com/introduction/" target="_blank">http://getbem.com/introduction/</a>) naming principles, and add them all to a folder named “Atoms.” I then had to do the same for the molecules on the page and then finally the components, placing them into folders titled “molecules” and “components.”</p>
+
+    <h2>Style Guide</h2>
+    <p>My next task was to use the atoms, molecules, and organisms to create a style guide. The purpose of this was to provide an overall guide of what, color, imagery, headings, and fonts were used on the website for ourselves to use for the project. It also functioned as practice for us to be able to provide a future web developer for the website a guide to keep website styles consistent.</p>
+    <p>To create the style guide, I looked at the screenshots of the atom components and organized them by heading hierarchy styles, paragraph styles, icons, buttons, images, logos, colors, and fonts used.</p>
+    <p class="p--end-spacing-large">One of the challenges I had with this website was that while the website looked like it followed HTML hierarchy, the website was coded with a template instead of by hand so many of the headers were incorrectly labeled as paragraphs or used the wrong heading number. To add to the confusion, the website was also somewhat unusual in that it had about five different styles each for its h2, h3, and paragraph text instead of just one or two. I had to make the choice on whether to follow the HTML hierarchy used on the website, or follow what I thought was the correct choice. Since I was creating the style guide as if I was going to be handing it over to another professional web developer, I decided to follow the proper guidelines and create my style guide (and later my components) using the correct HTML labels.</p>
+    <img src="images/fkl-mockup.jpg" alt="image of the style guide" class="p--end-spacing-large">
+
+    <h2>Components Page</h2>
+    <p>After having gathered the atoms, molecules, organism, and creating a style guide, my next task was to replicate every one of them on a component page. I used a combination of reading the CSS of the original website and trial-and-error to duplicate each component to the best of my ability.</p>
+    <p><a href="https://zoe-blyss.github.io/french-kiss-life-case-study/components/" target="_blank">https://zoe-blyss.github.io/french-kiss-life-case-study/components/</a></p>
+    <p class="p--end-spacing-large">While the task was generally simple, some of the challenges I faced were not having access to all of the fonts and spacing my components. For the fonts, I searched through Google Fonts and found the best match I could and used those instead. To find the proper formatting, I reviewed flex and grid layouts, and used those to space my atomic and molecule components.</p>
+    <img src="images/fkl-website-components-500px.jpg" alt="screenshot of the components website" class="p--end-spacing-large">
+
+
+    <h2>Final Webpage</h2>
+    <p>Once I had finished creating all of the organisms on the components page, I had to transfer all of them to the final webpage to re-create the site.</p>
+    <p>This was in general the easiest part of the project, as when the components were added together they had most of the functions of the original site. There were only two main additions that I had to add to the CSS to make the replicated website flow like the original.</p>
+    <p><a href="https://zoe-blyss.github.io/french-kiss-life-case-study/" target="_blank">https://zoe-blyss.github.io/french-kiss-life-case-study/</a></p>
+    <p class="p--end-spacing-large">One was that I had some trouble with making both the banner and the header have a sticky position (so it would scroll down with you on the page), but solved this creating a div block around both of them and then setting the div block’s position as sticky. I was then challenged with needing to offset one of the grids and still keeping the sticky banner’s position on top, so I added a z-index of -1 to the grid which took care of the issue.</p>
+    <img src="images/fkl-website-mockup-500px.jpg" alt="screenshot of the final mockup website">
     </div>
 
   <div class="content contact" id="contact">
